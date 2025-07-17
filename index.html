@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ミエトル - あなたのビジネスを「見える化」し、未来を拓く</title>
+    <title>ミエトル - あなたのビジネスを「見える化」し未来をひらく</title>
     <script src="./assets/saved_resource"></script>
     <link href="./assets/css2" rel="stylesheet" />
     <style>
@@ -1237,10 +1237,6 @@
         box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
           var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
       }
-      .hover\:text-gray-900:hover {
-        --tw-text-opacity: 1;
-        color: rgb(17 24 39 / var(--tw-text-opacity, 1));
-      }
       .hover\:text-white:hover {
         --tw-text-opacity: 1;
         color: rgb(255 255 255 / var(--tw-text-opacity, 1));
@@ -1671,6 +1667,11 @@
         margin-right: calc(1rem * var(--tw-space-x-reverse));
         margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
       }
+      .space-x-6 > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+        margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+      }
       .space-y-3 > :not([hidden]) ~ :not([hidden]) {
         --tw-space-y-reverse: 0;
         margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1764,6 +1765,9 @@
       }
       .font-extrabold {
         font-weight: 800;
+      }
+      .font-medium {
+        font-weight: 500;
       }
       .font-semibold {
         font-weight: 600;
@@ -1893,12 +1897,14 @@
       class="gradient-bg text-white py-20 text-center rounded-b-3xl shadow-lg"
     >
       <div class="container">
-        <h2 class="text-5xl font-extrabold leading-tight mb-6">
-          あなたのビジネスを「見える化」し、<br />未来を拓く
+        <h2 class="text-4xl font-extrabold leading-tight mb-6">
+          「見える」から「ミエトル」。<br />
+          経営が見える、成長が実感できる。<br />
+          経理知識ゼロでも、10年で純資産5000万円が達成できる。
         </h2>
         <p class="text-xl mb-10 opacity-90">
-          ミエトルは、複雑な経営状況をシンプルに可視化し、<br />
-          戦略的な意思決定をサポートするオールインワン経営管理ツールです。
+          複雑な数字管理に悩む起業家のために生まれた、シンプルで直感的な予実管理アプリです。<br />
+          経理の専門知識がなくても、あなたの事業成長と資産形成の道筋が手に取るように分かります。
         </p>
         <a
           href="https://demo.mietoru.com/"
@@ -1906,6 +1912,64 @@
           class="btn-primary text-lg px-8 py-4 inline-block shadow-xl hover:shadow-2xl"
           >デモ画面で体験してみる</a
         >
+      </div>
+    </section>
+
+    <!-- ミエトルとはセクション -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img
+            src="./assets/dashboard.png"
+            alt="ミエトルアプリの全体像"
+            class="rounded-xl shadow-2xl"
+          />
+        </div>
+        <div class="md:w-1/2 text-center md:text-left">
+          <h3 class="text-4xl font-bold mb-6 text-gray-800">
+            ミエトルが選ばれる理由
+          </h3>
+          <p class="text-lg text-gray-700 mb-6">
+            ミエトルは、中小企業の経営者や個人事業主の皆様が抱える「数字が見えない」「未来が描けない」
+            といった課題を解決するために開発されました。直感的なインターフェースで、
+            誰でも簡単に経営状況を把握し、自信を持って未来の計画を立てられるようになります。
+          </p>
+          <ul class="space-y-4 text-left">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">✔</span>
+              <div>
+                <h4 class="font-bold text-xl text-gray-800">
+                  充実したサポート体制
+                </h4>
+                <p class="text-gray-600">
+                  経理初心者でも安心、専門の税理士があなたの疑問や不安にいつでもお答えします。
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">✔</span>
+              <div>
+                <h4 class="font-bold text-xl text-gray-800">
+                  リアルタイムでのデータ更新
+                </h4>
+                <p class="text-gray-600">
+                  最新の経営状況をいつでも把握でき、迅速な意思決定が可能です。
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-3 mt-1">✔</span>
+              <div>
+                <h4 class="font-bold text-xl text-gray-800">
+                  シンプルで使いやすいデザイン
+                </h4>
+                <p class="text-gray-600">
+                  専門知識は不要。直感的な操作で、誰でもすぐに使いこなせます。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -1974,52 +2038,11 @@
               目標達成に向けたロードマップの見直しや今なにをすべきかがクリアになります。
             </p>
             <img
-              src="./assets/client_kanri_mietoru.png"
+              src="./assets/advice_detail.png"
               alt="クライアント管理画面イメージ"
               class="mt-6 rounded-lg shadow-md mx-auto"
             />
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ミエトルとはセクション -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-          <img
-            src="./assets/dashboard.png"
-            alt="ミエトルアプリの全体像"
-            class="rounded-xl shadow-2xl"
-          />
-        </div>
-        <div class="md:w-1/2 text-center md:text-left">
-          <h3 class="text-4xl font-bold mb-6 text-gray-800">
-            ミエトルが選ばれる理由
-          </h3>
-          <p class="text-lg text-gray-700 mb-6">
-            ミエトルは、中小企業の経営者や個人事業主の皆様が抱える「数字が見えない」「未来が描けない」
-            といった課題を解決するために開発されました。直感的なインターフェースと強力な機能で、
-            誰でも簡単に経営を「見える化」し、次のステップへと導きます。
-          </p>
-          <ul class="text-left text-gray-600 space-y-3 text-lg">
-            <li class="flex items-center">
-              <span class="text-green-500 text-2xl mr-3">✔</span>
-              シンプルで使いやすいデザイン
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-500 text-2xl mr-3">✔</span>
-              リアルタイムでのデータ更新
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-500 text-2xl mr-3">✔</span>
-              柔軟なカスタマイズ性
-            </li>
-            <li class="flex items-center">
-              <span class="text-green-500 text-2xl mr-3">✔</span>
-              充実したサポート体制
-            </li>
-          </ul>
         </div>
       </div>
     </section>
