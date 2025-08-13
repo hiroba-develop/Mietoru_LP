@@ -4,7 +4,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ミエトル - 経営が見える、成長が実感できる</title>
-    <link rel="icon" href="./assets/favicon.png" sizes="any" />
+    <link rel="icon" href="./assets/favicon_transparent.png" sizes="any" />
     <script src="./assets/saved_resource"></script>
     <link href="./assets/css2" rel="stylesheet" />
     <style>
@@ -25,6 +25,13 @@
         border-radius: 9999px;
         font-weight: 600;
         transition: background-color 0.3s ease;
+        white-space: nowrap;
+      }
+      @media (max-width: 767px) {
+        #header-contact-btn {
+          padding: 0.5rem 1rem;
+          font-size: 0.875rem;
+        }
       }
       .btn-primary:hover {
         background-color: #357abd;
@@ -1275,15 +1282,15 @@
         <div class="flex items-center space-x-2">
           <img
             src="./assets/mietoru_logo.png"
-            width="300"
-            class="rounded-full"
-            with='alt="ミエトルロゴ"'
+            class="rounded-full w-48 md:w-72"
+            alt="ミエトルロゴ"
           />
         </div>
 
         <a
           href="https://hiroba1931.co.jp/development/portfolio#contact"
           class="btn-primary"
+          id="header-contact-btn"
           target="_blank"
           >お問い合わせ</a
         >
@@ -1298,10 +1305,10 @@
         <div class="max-w-4xl mx-auto">
           <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
             もう、経営で悩まない。<br />
-            税理士という最強のパートナーと、理想の未来を築こう。
+            税理士という最強のパートナーと、<br class="hidden md:block" />理想の未来を築こう。
           </h2>
           <p class="text-xl mb-10 opacity-90 leading-relaxed">
-            ミエトルなら、専門の税理士があなたの10年後の目標設定から月次のアドバイスまで、経営のすべてをサポート。数字が苦手でも、確実に成長できる経営システムです。
+            ミエトルなら、専門の税理士があなたの10年後の目標設定から月次のアドバイスまで、経営のすべてをサポート。数字が苦手でも、確実に成長できる経営サービスです。
           </p>
           <a
             href="https://demo.mietoru.com/"
