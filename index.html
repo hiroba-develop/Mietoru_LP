@@ -1281,25 +1281,29 @@
   <body class="antialiased">
     <!-- ヘッダー -->
     <header class="bg-white shadow-sm py-4">
-      <div class="container flex justify-between items-center">
-        <div class="flex items-center space-x-2">
+      <div class="container flex justify-between items-center gap-2">
+        <div class="flex items-center space-x-2 flex-shrink-0">
           <img
             src="./assets/mietoru_logo.png"
-            class="rounded-full w-48 md:w-72"
+            class="rounded-full w-24 sm:w-40 md:w-72"
             alt="ミエトルロゴ"
           />
         </div>
-
-        <a
-          href="https://oji-cloud.com/#contact"
-          class="btn-primary"
-          id="header-contact-btn"
-          target="_blank"
-          >お問い合わせ</a
-        >
+    
+        <div class="flex flex-col sm:flex-row items-end sm:items-center gap-2 sm:gap-3 md:gap-4 flex-shrink-0">       
+          <a
+            href="https://mietoru.com/question"
+            class="btn-primary text-xs sm:text-sm md:text-base px-2 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-3 whitespace-nowrap"
+            target="_blank"
+          >個人利用の方はこちら</a>
+          <a
+            href="https://oji-cloud.com/#contact"
+            class="btn-primary text-xs sm:text-sm md:text-base px-2 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-3 whitespace-nowrap"
+            target="_blank"
+          >お問い合わせ</a>
+        </div>
       </div>
     </header>
-
     <!-- ヒーローセクション -->
     <section
       class="gradient-bg text-white py-28 text-center rounded-b-3xl shadow-lg"
